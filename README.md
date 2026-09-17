@@ -49,6 +49,8 @@ Edit `content/photo-metadata.json` **after the first import**. Copy photo IDs fr
 
 Edit `content/site.ts` for names, dates, headings, all 23 love notes, the full letter, the wish, the ending, and music settings. The starter notes are intentionally general and do not claim specific shared events.
 
+The final gift also reveals a portfolio surprise. Add the full `https://` URL to `site.portfolio.url` in `content/site.ts` when the portfolio is ready. The **Visit your portfolio** button appears only after the gift is opened and a valid URL is configured.
+
 ## Add the song
 
 Place a legally usable audio file at `public/audio/happy-birthday.mp3`. The site checks for it and hides music controls when it is absent. Visitors must interact before playback starts. The opening toggle chooses whether that interaction starts music. The cake button restarts the same shared player; sections never create overlapping tracks. Set `site.music.loop` to `true` in `content/site.ts` if you want looping, or change `site.music.src` for a different filename. Keep the audio file in `public/audio/`.

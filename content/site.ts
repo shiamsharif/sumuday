@@ -59,4 +59,9 @@ export const site = {
   ],
   wish: 'May this year bring you closer to everything your heart wishes for. ❤️',
   final: 'Of all these beautiful memories, my favourite thought is that there are still more to come with you.',
+  portfolio: {
+    message: 'I made one more thing for you: your very own portfolio website. A little space for your dreams, your work, and everything still ahead.',
+    url: 'https://sumaya-sikder-tuly.netlify.app/',
+    buttonLabel: 'Visit your portfolio',
+  },
 } as const;
