@@ -1,0 +1,11 @@
+{
+  "featured": null,
+  "slideshow": [],
+  "photos": {
+    "example-photo-id": {
+      "caption": "A little moment worth keeping",
+      "album": "Favourite moments",
+      "focalPoint": "50% 35%"
+    }
+  }
+}

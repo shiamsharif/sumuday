@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+.env*
+photo-source/*
+!photo-source/.gitkeep
+
+*.tsbuildinfo
