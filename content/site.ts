@@ -33,7 +33,7 @@ export const site = {
     'Your curiosity about the world.',
     'How safe it feels to be myself around you.',
     'Your little smiles when you are happy.',
-    'The warmth you bring into a room.',
+    'You opened my eyes and made even the road to camp feel beautiful.',
     'The way you listen with your whole heart.',
     'Your courage, even on difficult days.',
     'How you find beauty in small things.',

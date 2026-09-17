@@ -29,7 +29,12 @@ async function hashFile(file) {
   for await (const chunk of createReadStream(file)) hash.update(chunk);
   return hash.digest('hex').slice(0, 16);
 }
-const paths = (await scan(source)).sort((a, b) => a.localeCompare(b, 'en'));
+const naturalOrder = new Intl.Collator('en', { numeric: true, sensitivity: 'base' });
+const paths = (await scan(source)).sort((a, b) => {
+  const first = path.relative(source, a);
+  const second = path.relative(source, b);
+  return naturalOrder.compare(first, second) || first.localeCompare(second, 'en');
+});
 const output = [];
 const seen = new Set();
 let skipped = 0;
